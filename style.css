@@ -319,6 +319,14 @@ section{padding:var(--section) var(--gutter);border-bottom:1px solid var(--line)
 .principles p{margin-top:0.75rem;max-width:44ch;color:var(--muted)}
 .principles .tools{font-size:var(--t-eyebrow);text-transform:uppercase;letter-spacing:0.14em;color:var(--accent);line-height:1.7}
 
+/* ---------- now building ---------- */
+.now-grid{margin-top:3.5rem;display:grid;grid-template-columns:1fr;gap:2.5rem}
+@media (min-width:900px){.now-grid{grid-template-columns:repeat(2,1fr);gap:var(--gutter)}}
+.shot{border:1px solid var(--line-strong);border-radius:0.5rem;overflow:hidden;background:#fff;transition:border-color 340ms ease,transform 340ms var(--ease-out)}
+.shot:hover{border-color:var(--accent);transform:translateY(-4px)}
+.shot img{width:100%;height:auto}
+.now-grid figcaption{margin-top:1rem;font-size:var(--t-eyebrow);text-transform:uppercase;letter-spacing:0.14em;color:var(--muted);line-height:1.6}
+
 /* ---------- experience ---------- */
 .roles{margin-top:1rem}
 .role{display:grid;grid-template-columns:1fr;gap:1.5rem;border-bottom:1px solid var(--line);padding:3rem 0}
