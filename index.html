@@ -3,117 +3,487 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MD Tauhiduzzaman — Portfolio</title>
-<meta name="description" content="Personal portfolio of MD Tauhiduzzaman.">
+<title>MD Tauhiduzzaman — Principal SQA Engineer &amp; QA Lead</title>
+<meta name="description" content="Principal SQA Engineer and QA Lead with 8+ years across fintech, banking, insurance, healthcare and e-commerce. 400+ automated test suites, production defect leakage cut from ~18% to below 2%.">
+<meta property="og:title" content="MD Tauhiduzzaman — Principal SQA Engineer &amp; QA Lead">
+<meta property="og:description" content="8+ years leading QA strategy, AI-driven test automation and release sign-off. 400+ automated suites. Defect leakage from ~18% to below 2%.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1c0500">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="nav">
-  <div class="nav-inner">
-    <a href="#home" class="logo">MD Tauhiduzzaman</a>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="inner">
+    <p class="brand">MD Tauhiduzzaman</p>
+    <p class="count"><span id="plNum">0</span><span class="pct">%</span></p>
   </div>
+</div>
+
+<header class="site-nav">
+  <nav>
+    <a class="nav-logo" href="#top">
+      <span class="mono">MT</span>
+      <span class="name">MD Tauhiduzzaman</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#story">Story</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#credentials">Credentials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span class="bars"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span>
+    </button>
+  </nav>
 </header>
+
+<div class="mmenu" id="mmenu" aria-hidden="true">
+  <a href="#story">Story</a>
+  <a href="#experience">Experience</a>
+  <a href="#impact">Impact</a>
+  <a href="#expertise">Expertise</a>
+  <a href="#credentials">Credentials</a>
+  <a href="#contact">Contact</a>
+</div>
 
 <main>
 
-  <section id="home" class="hero">
-    <div class="hero-inner">
-      <p class="eyebrow">Hello, I'm</p>
-      <h1>MD Tauhiduzzaman</h1>
-      <p class="tagline">Your tagline goes here — e.g. "Software Engineer building reliable, user-focused products."</p>
-      <div class="cta-row">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-top">
+      <div class="hero-status status-row" data-reveal style="--d:1500ms">
+        <span class="chip"><span class="sonar-dot" aria-hidden="true"></span>Open to Roles</span>
+        <span class="chip"><span class="sonar-dot" aria-hidden="true"></span>Remote &middot; US / EU / APAC overlap</span>
+      </div>
+
+      <h2 class="hero-roles" aria-label="Principal SQA Engineer, QA Lead, Automation Architect, Certified Scrum Master">
+        <span class="rl"><span class="rl-in" style="--d:400ms">Principal SQA Engineer</span></span>
+        <span class="rl"><span class="rl-in" style="--d:490ms">QA Lead</span></span>
+        <span class="rl"><span class="rl-in" style="--d:580ms">Automation Architect</span></span>
+        <span class="rl"><span class="rl-in" style="--d:670ms">Certified Scrum Master</span></span>
+      </h2>
+
+      <p class="hero-desc" data-reveal style="--d:1650ms">
+        8+ years making releases boring, in the best way. I lead a QA team of 8, own
+        release sign-off, and build automation that took production defect leakage
+        from ~18% to below 2%.
+      </p>
+
+      <div class="hero-ctas cta-row" data-reveal style="--d:1800ms">
+        <a class="cta cta--primary" href="mailto:tauhidshuvo01@gmail.com">Let's talk <span class="arr"></span></a>
+        <a class="cta cta--ghost" href="#experience">Track record</a>
+      </div>
+    </div>
+
+    <div class="hero-stage">
+      <h1 class="hero-name" id="heroName" aria-label="MD Tauhiduzzaman">Tauhiduzzaman</h1>
+      <figure class="hero-portrait">
+        <picture>
+          <source srcset="img/hero.webp" type="image/webp">
+          <img src="img/hero.png" alt="MD Tauhiduzzaman, Principal SQA Engineer" width="896" height="1109">
+        </picture>
+      </figure>
+      <div class="hero-gradient"></div>
+    </div>
+
+    <p class="scroll-cue" data-reveal style="--d:2100ms">Scroll to enter</p>
+  </section>
+
+  <!-- ============ PRINCIPLES MARQUEE ============ -->
+  <div class="marquee" aria-label="Operating principles">
+    <div class="marquee-track" data-marquee>
+      <span class="mi">Shift Left</span>
+      <span class="mi">Automate What Repeats</span>
+      <span class="mi">Release With Confidence</span>
+      <span class="mi">AI Where It Helps</span>
+      <span class="mi">No Surprises In Production</span>
+    </div>
+  </div>
+
+  <!-- ============ STORY ============ -->
+  <section id="story">
+    <div class="story-grid">
+      <div class="story-copy">
+        <p class="eyebrow" data-reveal><span class="dot"></span>The Story</p>
+        <h2 class="display" data-reveal>Fewer escapes. Faster releases.</h2>
+        <p class="lead" data-reveal>
+          I'm a Principal SQA Engineer and QA Lead with 8+ years across fintech, banking,
+          insurance, healthcare and e-commerce. I own end-to-end QA strategy, release
+          sign-off and defect management across concurrent client engagements.
+        </p>
+        <p class="lead" data-reveal style="--d:90ms">
+          Today I lead QA at KAZ Software, where 400+ automated suites and a sharper
+          regression strategy have held defect leakage below 2% for two years, keeping a
+          bi-weekly release cadence steady for enterprise customers including Accenture and Wipro.
+        </p>
+      </div>
+
+      <ul class="principles">
+        <li data-reveal>
+          <span class="tick" aria-hidden="true"></span>
+          <div>
+            <h3>Strategy before test cases</h3>
+            <p>Coverage follows risk. I plan around what can actually hurt the release, then scope regression with change-impact analysis.</p>
+          </div>
+        </li>
+        <li data-reveal style="--d:90ms">
+          <span class="tick" aria-hidden="true"></span>
+          <div>
+            <h3>Automation that earns its keep</h3>
+            <p>Selenium, Mabl and Postman/Newman wired into CI/CD with build alerts, so regression runs itself and people test what's new.</p>
+          </div>
+        </li>
+        <li data-reveal style="--d:180ms">
+          <span class="tick" aria-hidden="true"></span>
+          <div>
+            <h3>Sign-off you can trust</h3>
+            <p>I own the release decision. Microservices on Amazon EKS get validated with Grafana dashboards and CloudWatch logs, not hope.</p>
+          </div>
+        </li>
+        <li data-reveal style="--d:270ms">
+          <span class="tick" aria-hidden="true"></span>
+          <div>
+            <h3>Teams that outlast rotations</h3>
+            <p>Certified Scrum Master and Agile coach. I mentor engineers, run onboarding and keep quality steady when people change.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow" data-reveal><span class="dot"></span>Experience</p>
+        <h2 class="display" data-reveal>Where the work happened.</h2>
+      </div>
+      <p class="sec-count" data-reveal>2016 &mdash; Present</p>
+    </div>
+
+    <div class="logo-strip employers" aria-label="Companies I have worked at" data-reveal>
+      <div class="marquee-track" data-marquee>
+        <span class="emp"><img src="img/logos/kaz.png" alt="KAZ Software"></span>
+        <span class="emp"><img src="img/logos/optimizely.svg" alt="Optimizely"></span>
+        <span class="emp"><img class="ico" src="img/logos/brainstation23.png" alt=""><b>Brain Station 23</b></span>
+        <span class="emp"><img class="ico" src="img/logos/btrac.png" alt=""><b>B-Trac Solutions</b></span>
+        <span class="emp"><img class="plate" src="img/logos/era.png" alt="ERA-InfoTech Limited"></span>
+        <span class="emp"><img src="img/logos/homesite.png" alt="Homesite Insurance"></span>
+        <span class="emp"><img src="img/logos/technovista.png" alt="TechnoVista Limited"></span>
+      </div>
+    </div>
+
+    <ol class="roles">
+      <li class="role" data-reveal>
+        <div class="role-side">
+          <p class="role-when">Oct 2023 &mdash; Present</p>
+          <p class="role-co">KAZ Software</p>
+          <p class="role-tag"><span class="sonar-dot" aria-hidden="true"></span>Current</p>
+        </div>
+        <div class="role-main">
+          <h3>Principal SQA Engineer <span>QA Lead</span></h3>
+          <ul class="role-points">
+            <li>Lead and mentor a QA team of 8 engineers across concurrent client engagements, setting priorities, running defect triage and serving as primary QA contact.</li>
+            <li>Designed AI-assisted automation workflows with Mabl over a ~2.5-year Devensoft engagement, building and maintaining 400+ automated test suites.</li>
+            <li>Cut production defect leakage from ~18% to below 2% and held it there for two years, supporting a consistent bi-weekly release cadence for Accenture and Wipro.</li>
+            <li>Own QA sign-off for every bi-weekly release; test microservices on Kubernetes (Amazon EKS) using Grafana dashboards and AWS CloudWatch logs.</li>
+            <li>Owned QA strategy and sign-off for the HATIL e-commerce storefront; built Selenium-Python automation covering ~50% of regression in 4&ndash;5 months.</li>
+          </ul>
+          <p class="role-out"><span>18% &rarr; &lt;2% defect leakage</span><span>400+ automated suites</span><span>Team of 8</span></p>
+          <p class="role-clients">Clients: HATIL &middot; CARE Bangladesh &middot; Devensoft</p>
+        </div>
+      </li>
+
+      <li class="role" data-reveal>
+        <div class="role-side">
+          <p class="role-when">Jun 2023 &mdash; Aug 2023</p>
+          <p class="role-co">Optimizely</p>
+        </div>
+        <div class="role-main">
+          <h3>Senior SQA Engineer <span>QA Lead</span></h3>
+          <ul class="role-points">
+            <li>Owned test case design, execution and bug reporting under a fixed engagement timeline.</li>
+            <li>Built Postman/Newman REST API automation suites covering core service endpoints.</li>
+            <li>Ran security and load testing ahead of production releases to validate readiness under peak use.</li>
+          </ul>
+          <p class="role-clients">Client: Montgomery County Public Schools (public-sector education)</p>
+        </div>
+      </li>
+
+      <li class="role" data-reveal>
+        <div class="role-side">
+          <p class="role-when">Sep 2021 &mdash; May 2023</p>
+          <p class="role-co">Brain Station 23</p>
+        </div>
+        <div class="role-main">
+          <h3>Senior SQA Engineer <span>Lead QA &amp; Scrum Master</span></h3>
+          <ul class="role-points">
+            <li>Joined the Unipet platform at inception and established test processes and coverage from the ground up.</li>
+            <li>Introduced Postman/Newman API and Selenium + Python UI automation, integrated into CI/CD with Slack build alerts, eliminating recurring manual regression.</li>
+            <li>Facilitated Scrum ceremonies as Scrum Master while owning QA delivery; escalation point for production issues with client-side site managers.</li>
+          </ul>
+          <p class="role-out"><span>Manual regression eliminated</span><span>CI/CD + Slack alerts</span></p>
+          <p class="role-clients">Client: Unipet, fuel retail platform (Trinidad and Tobago)</p>
+        </div>
+      </li>
+
+      <li class="role" data-reveal>
+        <div class="role-side">
+          <p class="role-when">Apr 2021 &mdash; Sep 2021</p>
+          <p class="role-co">B-Trac Solutions</p>
+        </div>
+        <div class="role-main">
+          <h3>Senior Engineer, SQA <span>QA Lead &amp; Scrum Master</span></h3>
+          <ul class="role-points">
+            <li>Led test case design and execution for new releases on a platform serving 9M+ users.</li>
+            <li>Performed change-impact analysis before releases to scope regression accurately; built Postman/Newman API automation alongside security and load testing.</li>
+          </ul>
+          <p class="role-out"><span>9M+ users</span></p>
+          <p class="role-clients">Client: Ami Probashi, migrant worker services platform</p>
+        </div>
+      </li>
+
+      <li class="role" data-reveal>
+        <div class="role-side">
+          <p class="role-when">Jan 2018 &mdash; Jan 2021</p>
+          <p class="role-co">ERA-InfoTech Limited</p>
+        </div>
+        <div class="role-main">
+          <h3>Assistant Test Engineer</h3>
+          <ul class="role-points">
+            <li>Tested the Bank Asia SMART App and iStelar, the core banking system (CBS) Bank Asia runs on.</li>
+            <li>Executed automation, manual, load, performance, volume and security testing across banking releases over a 3-year engagement.</li>
+            <li>Built functional automation with Selenium WebDriver (Java) and introduced a TDD/unit-testing framework, moving quality checks earlier in the cycle.</li>
+          </ul>
+          <p class="role-clients">Client: Bank Asia &middot; SMART App &middot; iStelar Core Banking System</p>
+        </div>
+      </li>
+
+      <li class="role" data-reveal>
+        <div class="role-side">
+          <p class="role-when">Sep 2016 &mdash; Dec 2017</p>
+          <p class="role-co">Homesite Insurance</p>
+        </div>
+        <div class="role-main">
+          <h3>SQA Engineer <span>Remote</span></h3>
+          <ul class="role-points">
+            <li>Prepared and executed test cases and scripts from user stories for insurance-domain features, with onshore and offshore developers in a distributed Agile process.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="role" data-reveal>
+        <div class="role-side">
+          <p class="role-when">Jun 2016 &mdash; Aug 2016</p>
+          <p class="role-co">TechnoVista Limited</p>
+        </div>
+        <div class="role-main">
+          <h3>Trainee SQA Engineer <span>Internship</span></h3>
+          <ul class="role-points">
+            <li>Prepared and executed test cases from user stories; tracked bugs through the full defect lifecycle.</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ IMPACT ============ -->
+  <section id="impact">
+    <div class="impact-head">
+      <p class="eyebrow" data-reveal><span class="dot"></span>By The Numbers</p>
+      <h2 class="display" data-reveal>Eight years, measured.</h2>
+    </div>
+
+    <dl class="stats">
+      <div data-reveal>
+        <dd><span data-count="8">8</span>+</dd>
+        <dt>Years in software quality</dt>
+      </div>
+      <div data-reveal style="--d:110ms">
+        <dd><span data-count="400">400</span>+</dd>
+        <dt>Automated test suites built</dt>
+      </div>
+      <div data-reveal style="--d:220ms">
+        <dd>&lt;2%</dd>
+        <dt>Defect leakage, down from ~18%</dt>
+      </div>
+      <div data-reveal style="--d:330ms">
+        <dd><span data-count="9">9</span>M+</dd>
+        <dt>Users on platforms tested</dt>
+      </div>
+    </dl>
+
+    <p class="strip-label" data-reveal>Clients and end customers I've shipped for</p>
+    <div class="logo-strip clients" aria-label="Clients I have delivered for" data-reveal>
+      <div class="marquee-track reverse" data-marquee>
+        <span class="cl"><span class="plate"><img src="img/logos/hatil.svg" alt="HATIL"></span><span class="cl-txt"><b>HATIL</b><i>Retail &amp; E-commerce</i></span></span>
+        <span class="cl"><span class="plate"><img src="img/logos/bankasia.png" alt="Bank Asia"></span><span class="cl-txt"><b>Bank Asia</b><i>SMART App &middot; iStelar CBS</i></span></span>
+        <span class="cl"><span class="plate"><img src="img/logos/care.png" alt="CARE"></span><span class="cl-txt"><b>CARE Bangladesh</b><i>NGO Platform</i></span></span>
+        <span class="cl"><span class="plate"><img src="img/logos/devensoft.svg" alt="Devensoft"></span><span class="cl-txt"><b>Devensoft</b><i>Cloud-native M&amp;A Software</i></span></span>
+        <span class="cl"><span class="plate"><img src="img/logos/accenture.svg" alt="Accenture"></span><span class="cl-txt"><b>Accenture</b><i>Via Devensoft</i></span></span>
+        <span class="cl"><span class="plate"><img src="img/logos/wipro.svg" alt="Wipro"></span><span class="cl-txt"><b>Wipro</b><i>Via Devensoft</i></span></span>
+        <span class="cl"><span class="plate wide"><img src="img/logos/mcps.png" alt="Montgomery County Public Schools"></span><span class="cl-txt"><b>MCPS</b><i>Public-sector Education</i></span></span>
+        <span class="cl"><span class="plate"><img src="img/logos/unipet.png" alt="Unipet"></span><span class="cl-txt"><b>Unipet</b><i>Fuel Retail &middot; Trinidad &amp; Tobago</i></span></span>
+        <span class="cl"><span class="plate"><img src="img/logos/amiprobashi.svg" alt="Ami Probashi"></span><span class="cl-txt"><b>Ami Probashi</b><i>9M+ Users</i></span></span>
       </div>
     </div>
   </section>
 
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p class="section-text">
-      Placeholder bio — replace this with a short paragraph about your background,
-      what you work on, and what drives you. Two to four sentences is usually enough.
-    </p>
-  </section>
-
-  <section id="skills" class="section section-alt">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <span class="skill-pill">Skill One</span>
-      <span class="skill-pill">Skill Two</span>
-      <span class="skill-pill">Skill Three</span>
-      <span class="skill-pill">Skill Four</span>
-      <span class="skill-pill">Skill Five</span>
-      <span class="skill-pill">Skill Six</span>
-    </div>
-  </section>
-
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="card-grid">
-      <article class="card">
-        <h3>Project One</h3>
-        <p>Short description of what this project does and the problem it solves.</p>
-        <a href="#" class="card-link">View Project →</a>
-      </article>
-      <article class="card">
-        <h3>Project Two</h3>
-        <p>Short description of what this project does and the problem it solves.</p>
-        <a href="#" class="card-link">View Project →</a>
-      </article>
-      <article class="card">
-        <h3>Project Three</h3>
-        <p>Short description of what this project does and the problem it solves.</p>
-        <a href="#" class="card-link">View Project →</a>
-      </article>
-    </div>
-  </section>
-
-  <section id="experience" class="section section-alt">
-    <h2>Experience</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h3>Job Title</h3>
-          <p class="timeline-meta">Company Name · Start — End</p>
-          <p>Brief description of your role and key achievements.</p>
+  <!-- ============ EXPERTISE ============ -->
+  <section id="expertise">
+    <div class="story-grid">
+      <div class="story-copy">
+        <p class="eyebrow" data-reveal><span class="dot"></span>Expertise</p>
+        <h2 class="display" data-reveal>Risk in.<br>Confidence out.</h2>
+        <p class="lead" data-reveal>
+          Six things I bring to a team, from the first test plan to the release call.
+        </p>
+        <p class="lead" data-reveal style="--d:90ms">
+          Languages: Python, Java, JavaScript. Domains: payments (EPX, Fiserv, TSYS exposure),
+          banking, insurance, ERP (Acumatica, Dynamics 365 Business Central).
+        </p>
+        <div class="cta-row" data-reveal style="--d:180ms">
+          <a class="cta cta--primary" href="mailto:tauhidshuvo01@gmail.com">Start a conversation <span class="arr"></span></a>
+          <a class="cta cta--ghost" href="https://linkedin.com/in/md-tauhiduzzaman-shuvo" target="_blank" rel="noreferrer noopener">LinkedIn <span class="arr"></span></a>
         </div>
       </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h3>Job Title</h3>
-          <p class="timeline-meta">Company Name · Start — End</p>
-          <p>Brief description of your role and key achievements.</p>
-        </div>
-      </div>
+
+      <ul class="principles">
+        <li data-reveal>
+          <span class="tick" aria-hidden="true"></span>
+          <div>
+            <h3>QA Strategy &amp; Release Sign-off</h3>
+            <p>Test strategy, planning, regression planning, exit criteria and defect management across the SDLC/STLC.</p>
+            <p class="tools">JIRA &middot; Xray &middot; Azure DevOps &middot; TFS &middot; Trello &middot; Bugzilla &middot; Redmine</p>
+          </div>
+        </li>
+        <li data-reveal style="--d:90ms">
+          <span class="tick" aria-hidden="true"></span>
+          <div>
+            <h3>Test Automation</h3>
+            <p>UI and mobile automation frameworks, TDD, cross-browser coverage and regression suites that scale with the product.</p>
+            <p class="tools">Selenium WebDriver &middot; Mabl &middot; Appium &middot; BrowserStack</p>
+          </div>
+        </li>
+        <li data-reveal style="--d:180ms">
+          <span class="tick" aria-hidden="true"></span>
+          <div>
+            <h3>API, Performance &amp; Security</h3>
+            <p>REST API automation, load and performance testing with token-based auth, and security testing before production.</p>
+            <p class="tools">Postman &middot; Newman &middot; Bruno &middot; JMeter &middot; BlazeMeter &middot; WireShark</p>
+          </div>
+        </li>
+        <li data-reveal style="--d:270ms">
+          <span class="tick" aria-hidden="true"></span>
+          <div>
+            <h3>Cloud, CI/CD &amp; Observability</h3>
+            <p>Microservices testing on Kubernetes, containerised test environments and pipelines that fail loudly.</p>
+            <p class="tools">Amazon EKS &middot; Docker &middot; Jenkins &middot; Git &middot; Grafana &middot; AWS CloudWatch &middot; SQL &middot; PostgreSQL</p>
+          </div>
+        </li>
+        <li data-reveal style="--d:360ms">
+          <span class="tick" aria-hidden="true"></span>
+          <div>
+            <h3>AI-Assisted QA</h3>
+            <p>AI-powered automation and LLM tooling for test case generation and faster QA workflows.</p>
+            <p class="tools">Mabl AI &middot; Claude &middot; ChatGPT &middot; Gemini</p>
+          </div>
+        </li>
+        <li data-reveal style="--d:450ms">
+          <span class="tick" aria-hidden="true"></span>
+          <div>
+            <h3>Agile Leadership</h3>
+            <p>Scrum Master for distributed teams across the US, Caribbean and APAC. Mentoring, onboarding and knowledge transfer.</p>
+            <p class="tools">CSM &middot; CAL-E &middot; CAL-O &middot; ICP-ACC &middot; Management 3.0</p>
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
 
-  <section id="contact" class="section">
-    <h2>Get in Touch</h2>
-    <p class="section-text">Feel free to reach out — I'm always open to discussing new projects or opportunities.</p>
-    <div class="contact-links">
-      <a href="mailto:you@example.com">Email</a>
-      <a href="https://github.com/MDTauhiduzzamanShuvo" target="_blank" rel="noopener">GitHub</a>
-      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+  <!-- ============ CREDENTIALS ============ -->
+  <section id="credentials">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow" data-reveal><span class="dot"></span>Credentials</p>
+        <h2 class="display" data-reveal>Certified. Qualified.</h2>
+      </div>
+    </div>
+
+    <div class="cred-grid">
+      <div>
+        <p class="cred-label" data-reveal>Certifications</p>
+        <ul class="cred-list">
+          <li data-reveal><b>Certified Scrum Master</b><span>CSM</span></li>
+          <li data-reveal><b>Certified Agile Leadership, Essentials</b><span>CAL-E</span></li>
+          <li data-reveal><b>Certified Agile Leadership, Organization</b><span>CAL-O</span></li>
+          <li data-reveal><b>Certified Agile Coach</b><span>ICP-ACC</span></li>
+          <li data-reveal><b>Management 3.0</b><span>Leadership</span></li>
+          <li data-reveal><b>Software Testing &amp; QA Using Selenium</b><span>Automation</span></li>
+          <li data-reveal><b>Red Hat System Administration I</b><span>RH124</span></li>
+          <li data-reveal><b>Microsoft ASP.NET MVC 6 with SQL Server 2016</b><span>Development</span></li>
+          <li data-reveal><b>Certified Aware Leader</b><span>Leadership</span></li>
+        </ul>
+      </div>
+      <div>
+        <p class="cred-label" data-reveal>Education</p>
+        <ul class="cred-list edu">
+          <li data-reveal>
+            <b>MSc, Computer Science &amp; Engineering</b>
+            <span>United International University &middot; 2023</span>
+          </li>
+          <li data-reveal>
+            <b>BSc, Computer Science &amp; Software Engineering</b>
+            <span>American International University-Bangladesh &middot; 2017</span>
+          </li>
+        </ul>
+        <p class="cred-label cred-label--gap" data-reveal>Languages</p>
+        <ul class="cred-list edu">
+          <li data-reveal><b>English</b><span>Duolingo English Test: 105</span></li>
+          <li data-reveal><b>Bangla</b><span>Native</span></li>
+        </ul>
+      </div>
     </div>
   </section>
 
 </main>
 
-<footer>
-  <p>&copy; <span id="year"></span> MD Tauhiduzzaman. All rights reserved.</p>
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <p class="eyebrow" data-reveal><span class="dot sonar-dot"></span>Let's Work Together</p>
+  <h2 class="display" data-reveal>Need releases you can trust?</h2>
+  <p class="lead" data-reveal>Tell me what keeps breaking. I'll tell you how I'd stop it.</p>
+  <a class="email-link" href="mailto:tauhidshuvo01@gmail.com" data-reveal>
+    <span>tauhidshuvo01@gmail.com</span><span class="arr"></span>
+  </a>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-bar">
+    <div class="fb-sign">
+      <div class="status-row status-row--compact">
+        <span class="chip"><span class="sonar-dot" aria-hidden="true"></span>Open to Roles</span>
+        <span class="chip">Dhaka, Bangladesh</span>
+      </div>
+    </div>
+    <nav class="fb-social" aria-label="Contact links">
+      <ul>
+        <li><a href="https://linkedin.com/in/md-tauhiduzzaman-shuvo" target="_blank" rel="noreferrer noopener">LinkedIn</a></li>
+        <li><a href="mailto:tauhidshuvo01@gmail.com">Email</a></li>
+        <li><a href="tel:+8801711953127">+880 1711 953127</a></li>
+      </ul>
+    </nav>
+    <div class="fb-legal">
+      <p>&copy; <span id="year">2026</span> MD Tauhiduzzaman</p>
+      <p class="tag">Tested before you saw it.</p>
+    </div>
+  </div>
 </footer>
 
 <script src="script.js"></script>
