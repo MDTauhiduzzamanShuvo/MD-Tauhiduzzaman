@@ -412,6 +412,7 @@ section{padding:var(--section) var(--gutter);border-bottom:1px solid var(--line)
 .stats dd{font-family:var(--font-display);font-size:var(--t-display);line-height:1;transition:color 340ms ease;font-variant-numeric:tabular-nums}
 .stats > div:hover dd{color:var(--accent)}
 .stats dt{max-width:20ch;text-transform:uppercase;letter-spacing:0.14em;color:var(--muted)}
+.stat-note{max-width:26ch;font-size:0.72rem;line-height:1.5;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent)}
 
 /* ---------- credentials ---------- */
 .cred-grid{margin-top:4rem;display:grid;grid-template-columns:1fr;gap:4rem}
