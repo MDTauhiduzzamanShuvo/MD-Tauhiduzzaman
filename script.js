@@ -71,7 +71,7 @@ function countUp(el) {
   const dur = 1300;
   (function tick(now) {
     const p = Math.min((now - t0) / dur, 1);
-    el.textContent = Math.round((1 - Math.pow(1 - p, 3)) * to);
+    el.textContent = Math.round((1 - Math.pow(1 - p, 3)) * to).toLocaleString('en-US');
     if (p < 1) requestAnimationFrame(tick);
   })(t0);
 }
