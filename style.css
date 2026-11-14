@@ -128,7 +128,7 @@ main{position:relative;width:100%;overflow-x:hidden}
 }
 .nav-logo .name{font-size:var(--t-eyebrow);font-weight:500;text-transform:uppercase;letter-spacing:0.22em;color:var(--muted);display:none}
 @media (min-width:640px){.nav-logo .name{display:block}}
-.nav-links{display:none;align-items:center;gap:2.5rem}
+.nav-links{display:none;align-items:center;gap:2rem}
 @media (min-width:1025px){.nav-links{display:flex}}
 .nav-links a{
   position:relative;font-size:var(--t-eyebrow);font-weight:500;text-transform:uppercase;
@@ -318,6 +318,9 @@ section{padding:var(--section) var(--gutter);border-bottom:1px solid var(--line)
 .principles h3{font-size:var(--t-h3);font-weight:600;line-height:1.15;letter-spacing:-0.01em}
 .principles p{margin-top:0.75rem;max-width:44ch;color:var(--muted)}
 .principles .tools{font-size:var(--t-eyebrow);text-transform:uppercase;letter-spacing:0.14em;color:var(--accent);line-height:1.7}
+.proj-code{display:inline-flex;align-items:center;gap:0.5rem;margin-top:1rem;font-size:var(--t-eyebrow);font-weight:500;text-transform:uppercase;letter-spacing:0.14em;color:var(--foreground);transition:color 340ms ease}
+.proj-code:hover{color:var(--accent)}
+.proj-code .arr{width:0.5em;height:0.5em}
 
 /* ---------- now building ---------- */
 .now-grid{margin-top:3.5rem;display:grid;grid-template-columns:1fr;gap:2.5rem}
@@ -358,12 +361,23 @@ section{padding:var(--section) var(--gutter);border-bottom:1px solid var(--line)
 .proj h3{font-size:var(--t-h3);font-weight:600;line-height:1.15;letter-spacing:-0.01em}
 .proj-desc{margin-top:0.5rem;color:var(--muted)}
 .proj-tags{font-size:var(--t-eyebrow);text-transform:uppercase;letter-spacing:0.16em;color:var(--muted)}
+.proj-grid{margin-top:6rem;display:grid;grid-template-columns:1fr;gap:1.5rem}
+@media (min-width:700px){.proj-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1100px){.proj-grid{grid-template-columns:repeat(3,1fr)}}
+.proj-card-top{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.proj-fact{text-align:right}
+.proj-fact b{display:block;font-family:var(--font-display);font-weight:400;font-size:var(--t-h3);line-height:1;color:var(--accent)}
+.proj-fact span{display:block;margin-top:0.4rem;font-size:0.68rem;text-transform:uppercase;letter-spacing:0.12em;color:var(--muted)}
+.proj-grid .proj h3{margin-top:0.25rem}
+.proj-grid .proj-tags{margin-top:auto;padding-top:1rem;border-top:1px solid var(--line)}
 .proj--wide{margin-top:6rem}
 @media (min-width:900px){.proj--wide{flex-direction:row;align-items:center;gap:2rem}.proj--wide .proj-tags{margin-left:auto;text-align:right;flex-shrink:0}}
 @media (max-width:640px){
   .proj-id,.proj-big,.proj-stats{justify-content:center}
   .proj-stats b{font-size:var(--t-h2)}
   #work .role-out{justify-content:center}
+  .proj-card-top{justify-content:center;flex-direction:column;gap:0.75rem}
+  .proj-fact{text-align:center}
   .proj--wide{align-items:center;text-align:center}
 }
 
@@ -410,6 +424,8 @@ section{padding:var(--section) var(--gutter);border-bottom:1px solid var(--line)
 }
 .cred-list b{font-size:1.25rem;font-weight:600;letter-spacing:-0.01em;line-height:1.25}
 .cred-list span{flex-shrink:0;font-size:var(--t-eyebrow);text-transform:uppercase;letter-spacing:0.16em;color:var(--muted);text-align:right}
+.cred-view{color:var(--accent);text-decoration:underline;text-underline-offset:0.2em}
+.cred-view:hover{color:var(--foreground)}
 .cred-list.edu li{flex-direction:column;gap:0.4rem}
 .cred-list.edu span{text-align:left}
 
